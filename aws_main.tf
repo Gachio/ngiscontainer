@@ -14,8 +14,9 @@ provider "aws" {
 }
 
 resource "aws_instance" "app_server" {
-  ami           = "ami-830c94e3"
-  instance_type = "t2.nano"
+#- ami           = "ami-830c94e3" 
+ ami           = "ami-08d70e59c07c61a3a" # Updates the existing ami
+instance_type = "t2.nano"
 
   tags = {
     Name = "DryRunAppServer"
