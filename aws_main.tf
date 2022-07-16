@@ -19,6 +19,7 @@ resource "aws_instance" "app_server" {
 instance_type = "t2.nano"
 
   tags = {
-    Name = "DryRunAppServer"
+    Name = var.instance_name
   }
 }
+
